@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Glow Perfect | Wig & Beauty Salon</title>
+  <script defer>
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
+</head>
+
+<body style="font-family: Arial, sans-serif;">
+  <!-- Header -->
+  <header>
+    <nav class="flex items-center justify-between py-4 px-6 bg-gray-800">
+      <h1 class="text-3xl font-bold text-pink-400">Glow Perfect</h1>
+  
+      <!-- Hamburger Button -->
+      <button class="md:hidden focus:outline-none" onclick="toggleMenu()">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+  
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="./index.html" class="text-white hover:text-pink-400">Home</a></li>
+        <li><a href="#about" class="text-white hover:text-pink-400">About</a></li>
+        <li><a href="#services" class="text-white hover:text-pink-400">Services</a></li>
+        <li><a href="#testimonials" class="block text-white hover:text-pink-400">Testimonials</a></li>
+        <li><a href="#contact" class="text-white hover:text-pink-400">Contact</a></li>
+      </ul>
+    </nav>
+  
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu" class="md:hidden hidden px-6 pb-4 space-y-2 bg-gray-800">
+      <li><a href="./index.html" class="block text-white hover:text-pink-400">Home</a></li>
+      <li><a href="#about" class="block text-white hover:text-pink-400">About</a></li>
+      <li><a href="#services" class="block text-white hover:text-pink-400">Services</a></li>
+      <li><a href="#testimonials" class="block text-white hover:text-pink-400">Testimonials</a></li>
+      <li><a href="#contact" class="block text-white hover:text-pink-400">Contact</a></li>
+    </ul>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col-reverse md:flex-row items-center justify-between px-6 py-20 gap-8 text-white bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoqZ6bhjMnXiptzH9vLV9UrEnIEkjZ1Vo_Fg&s')] bg-cover bg-center bg-no-repeat h-screen">
+    <!-- Text Content -->
+    <div class="text-center md:text-left md:w-1/2">
+      <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-tight">Flawless Wig Installations<br /> Tailored Just for
+        You</h1>
+      <p class="text-lg mb-6 text-gray-300">Experience beauty and confidence at <strong>Glow Perfect</strong>. Our
+        expert stylists create seamless, natural-looking wig installations you'll absolutely love.</p>
+      <a href="#book"
+        class="inline-block bg-pink-500 font-semibold text-white px-6 py-3 rounded-full hover:bg-pink-600 transition duration-300">Book
+        an Appointment</a>
+    </div>
+  
+    <!-- Image -->
+    <div class="md:w-1/2">
+      <!-- <img src="https://images.pexels.com/photos/3065171/pexels-photo-3065171.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="Wig installation at salon" class="w-full rounded-lg shadow-xl"> -->
+    </div>
+  </section>
+
+  <!-- Optional Welcome Section -->
+  <section class="text-center py-8">
+    <h2 class="text-3xl font-bold mb-2">Welcome to Glow Perfect</h2>
+    <p class="text-black max-w-xl mx-auto">Where beauty meets perfection. From classic installs to trendy
+      transformations, we're your go-to salon for premium wig services.</p>
+  </section>
+
+  <!-- About Us-->
+  <section class="text-black px-6" id="about">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
+  
+      <!-- Image -->
+      <div class="w-full md:w-1/2">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCDQSMXAImPJ4oORjKJZ5cMwfExTNw9KtLbg&s"
+          alt="About Us" class="w-full rounded-lg shadow-lg" />
+      </div>
+  
+      <!-- Text Content -->
+      <div class="w-full md:w-1/2 text-center md:text-left">
+        <h2 class="text-3xl font-bold text-center mb-8">About Us</h2>
+        <p class="mb-4">
+          At <strong>Glow Perfect</strong>, we don’t just install wigs — we create confidence. Our salon was founded
+          on the belief that every woman deserves to feel beautiful, empowered, and seen.
+        </p>
+        <p class="mb-4">
+          Whether you’re going for a bold new look or enhancing your natural beauty, our expert stylists are here to
+          deliver flawless wig installations that turn heads and lift spirits.
+        </p>
+        <p>
+          We specialize in natural-looking, secure, and long-lasting wig installs using the latest techniques and highest
+          quality products. From frontals and closures to custom styling, every appointment is tailored to fit your unique
+          style and personality.
+        </p>
+        <a href="#book"
+          class="inline-block bg-pink-500 font-semibold text-white px-6 py-3 rounded-full hover:bg-pink-600 transition duration-300 my-5">Book
+          an Appointment</a>
+      </div>
+    </div>
+  </section>
+ 
+  <!--Our Services-->
+  <section class="py-12 px-6 text-black" id="services">
+    <h2 class="text-3xl font-bold text-center mb-6">Our Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-2 text-center">
+      <!-- Service 1 -->
+      <div class="p-4 rounded-lg">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2V_EB3jIE-vUlK_oWh2o7huFaU6uCZLptYQ&s"
+          alt="" class="rounded-full mb-4 justify-center mx-auto hover:scale-105 transition-transform duration-100">
+        <h3 class="text-xl font-semibold mb-2">Hair Making</h3>
+        <p>At Glow Perfect, we believe your hair is your crown. Our expert stylists specialize in creating stunning hairstyles
+        tailored to your face shape, hair type, and personal taste. Whether you desire braids, cornrows, weaves, or a trendy new
+        look, we deliver flawless results that turn heads and boost your confidence.</p>
+      </div>
+      <!-- Service 2 -->
+      <div class="p-4 rounded-lg ">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJURu0XOdnMXrL-nGKT6PQcALBs69zJXEj7g&s"
+          alt="" class="rounded-full mb-4 justify-center mx-auto hover:scale-105 transition-transform duration-100">
+        <h3 class="text-xl font-semibold mb-2">Custom Wig Making and Styling</h3>
+        <p>Our custom wig service is designed to give you the perfect fit, style, and volume. Each wig is handcrafted using
+        high-quality human hair, tailored to your head size and personal style. Whether you need a natural everyday look or a
+        bold statement piece, we create wigs that feel comfortable and look incredibly realistic.</p>
+      </div>
+      <!-- Service 3 -->
+      <div class="p-4 rounded-lg ">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoxCS6K5K-ysudQtDXNMwKMk0T9JD75-CmOw&s"
+          alt="" class="rounded-full mb-4 justify-center mx-auto hover:scale-105 transition-transform duration-100">
+        <h3 class="text-xl font-semibold mb-2">Professional Haircut</h3>
+        <p>From classic trims to trendy cuts, our haircut service keeps you looking fresh and stylish. We cater to both women and
+        men, ensuring precision, clean lines, and a look that complements your features. Trust us to bring your haircut vision
+        to life with expert hands and creative flair.</p>
+      </div>
+      <!-- Service 4 -->
+      <div class="p-4 rounded-lg ">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnCd1wGiPv-GdgEunSJauFpYzwzYgMEuvvqw&s" alt=""
+          class="rounded-full mb-4 justify-center mx-auto hover:scale-105 transition-transform duration-100">
+        <h3 class="text-xl font-semibold mb-2">Dreadlock and Faux locks</h3>
+        <p>Our dreadlock specialists offer neat, stylish, and durable locs that reflect your personality. Whether you're starting
+        your loc journey, need a retwist, or want faux locs, we provide clean parts, firm holds, and a beautiful finish that
+        lasts. Express yourself boldly and naturally with our loc services.</p>
+      </div>
+      <!-- Service 5 -->
+      <div class="p-4 rounded-lg ">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn7jKAsIDRsPnSDxK0KXkaeE1WpBW4Sq6y6Q&s" alt=""
+          class="rounded-full mb-4 justify-center mx-auto hover:scale-105 transition-transform duration-100">
+        <h3 class="text-xl font-semibold mb-2">Nails Services</h3>
+        <p>Indulge in our nail services designed to pamper and beautify. From classic gel and acrylics to intricate nail art and
+        designs, we pay close attention to every detail. Enjoy a relaxing experience while we transform your nails into works of
+        art, perfect for any mood or occasion.</p>
+      </div>
+      <!-- Service 6 -->
+      <div class="p-4 rounded-lg ">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAQl_Kcrx1y4QNsa6DiSekDyFQMKgShT1C3w&s"
+          alt="" class="rounded-full mb-4 justify-center mx-auto hover:scale-105 transition-transform duration-100">
+        <h3 class="text-xl font-semibold mb-2">Mani/Padi- Cure</h3>
+        <p>Treat your hands and feet to the ultimate care with our manicure and pedicure services. We focus on hygiene, comfort,
+        and aesthetics—cuticle care, nail shaping, exfoliation, and polish application included. Whether you're preparing for a
+        big event or just want to feel pampered, we’ll leave your nails neat, polished, and refreshed.
+        </p>
+      </div>
+      <!-- Service 7 -->
+      <div class="p-4 rounded-lg ">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3SI1uOwa58BP-fJco_JIpgdzeBKX5D83vvg&s"
+          alt="" class="rounded-full mb-4 justify-center mx-auto hover:scale-105 transition-transform duration-100">
+        <h3 class="text-xl font-semibold mb-2">MakeUp</h3>
+        <p>Glow with confidence through our professional makeup service. Whether it's for a wedding, photoshoot, party, or special
+        event, we create looks that enhance your natural beauty. From soft glam to full-on drama, our makeup artists tailor each
+        look to match your outfit, personality, and the occasion.</p>
+      </div>
+    </div>
+  </section>
+
+    <!--Testimonials-->
+    <h2 class="text-3xl font-bold text-center mb-6" id="testimonials">Testimonials</h2>
+  <section class="py-12 px-6 bg-gray-100" id="testimonials">
+    <div class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-2">
+      <div class="bg-white py-6 px-12 rounded-lg">
+        <p class="text-gray-600 mb-4">"Glow Perfect transformed my look! The wig installation was flawless and the
+          stylists were so professional. I felt like a queen!"</p>
+        <p class="text-right text-gray-500">- Sarah J.</p>
+      </div>
+      <div class="bg-white py-6 px-12 rounded-lg">
+        <p class="text-gray-600 mb-4">"I love my new wig! The team at Glow Perfect is amazing. They really listened to
+          what I wanted and delivered beyond my expectations."</p>
+        <p class="text-right text-gray-500">- Emily R.</p>
+      </div>
+      <div class="bg-white py-6 px-12 rounded-lg">
+        <p class="text-gray-600 mb-4">"Glow Perfect transformed my look! The staff is friendly and professional. Kudos to the owner."</p>
+        <p class="text-right text-gray-500">- Adaobi O.</p>
+      </div>
+      <div class="bg-white py-6 px-12 rounded-lg">
+        <p class="text-gray-600 mb-4">"Best barbing experience ever. Clean environment and skilled barbers."</p>
+        <p class="text-right text-gray-500">- Chinedu K.</p>
+      </div>
+      <div class="bg-white py-6 px-12 rounded-lg">
+        <p class="text-gray-600 mb-4">"Had my Best Pedicure session with Glow Perfect, their staffs are very friendly".</p>
+        <p class="text-right text-gray-500">- Ade A.</p>
+      </div>
+      <div class="bg-white py-6 px-12 rounded-lg">
+        <p class="text-gray-600 mb-4">"Choosing their makeup service for my wedding, is one of the best decision i made in life, The makeup artist really outdid herself".</p>
+        <p class="text-right text-gray-500">- Debora M.</p>
+      </div>
+    </div>
+    </section>
+
+    <section id="book" class="bg-gray-800 py-12 px-6 text-white">
+      <div class="max-w-xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-6">Book an Appointment</h2>
+        <form id="whatsappForm" class="space-y-4 bg-zinc-900 p-6 rounded-lg shadow-lg">
+          <input type="text" id="name" placeholder="Your Name"
+            class="w-full px-4 py-2 rounded bg-zinc-800 text-white border border-zinc-700" required>
+        
+          <select id="service" class="w-full px-4 py-2 rounded bg-zinc-800 text-white border border-zinc-700" required>
+            <option value="">Select a Service</option>
+            <option value="Hair Making">Hair Making Services</option>
+            <option value="Custom Wig Making">Custom Wig Making Services</option>
+            <option value="Haircut">Haircut Services</option>
+            <option value="Dreadlock">Dreadlock Services</option>
+            <option value="Nails">Nails Services</option>
+            <option value="MakeUp">MakeUp Services</option>
+          </select>
+        
+          <input type="tel" id="phone" placeholder="Phone Number"
+            class="w-full px-4 py-2 rounded bg-zinc-800 text-white border border-zinc-700" required>
+        
+          <textarea id="message" placeholder="Additional Message (Optional)"
+            class="w-full px-4 py-2 rounded bg-zinc-800 text-white border border-zinc-700"></textarea>
+        
+          <button type="submit" class="w-full bg-pink-500 hover:bg-pink-600 transition px-6 py-3 rounded-full font-semibold">
+            Submit via WhatsApp
+          </button>
+        </form>        
+      </div>
+      </section>
+
+    <!-- Contact Section Placeholder -->
+    <section id="contact" class="py-12 px-6 text-center bg-gray-800">
+      <h2 class="text-2xl font-bold mb-4 text-white">Get in Touch</h2>
+      <p class="text-gray-400">Call: <strong>+234-XXX-XXX-XXXX</strong></p>
+      <p class="text-gray-400 mb-2">Email:
+        <a href="mailto:021styling@gmail.com"><strong>glowperfect@gmail.com</strong></a>
+      </p>
+      <p class="text-gray-400 mb-2">Follow us on social media:</p>
+      <div class="flex justify-center space-x-4 mb-4">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 258">
+            <defs>
+              <linearGradient id="logosWhatsappIcon0" x1="50%" x2="50%" y1="100%" y2="0%">
+                <stop offset="0%" stop-color="#1faf38" />
+                <stop offset="100%" stop-color="#60d669" />
+              </linearGradient>
+              <linearGradient id="logosWhatsappIcon1" x1="50%" x2="50%" y1="100%" y2="0%">
+                <stop offset="0%" stop-color="#f9f9f9" />
+                <stop offset="100%" stop-color="#fff" />
+              </linearGradient>
+            </defs>
+            <path fill="url(#logosWhatsappIcon0)"
+              d="M5.463 127.456c-.006 21.677 5.658 42.843 16.428 61.499L4.433 252.697l65.232-17.104a123 123 0 0 0 58.8 14.97h.054c67.815 0 123.018-55.183 123.047-123.01c.013-32.867-12.775-63.773-36.009-87.025c-23.23-23.25-54.125-36.061-87.043-36.076c-67.823 0-123.022 55.18-123.05 123.004" />
+            <path fill="url(#logosWhatsappIcon1)"
+              d="M1.07 127.416c-.007 22.457 5.86 44.38 17.014 63.704L0 257.147l67.571-17.717c18.618 10.151 39.58 15.503 60.91 15.511h.055c70.248 0 127.434-57.168 127.464-127.423c.012-34.048-13.236-66.065-37.3-90.15C194.633 13.286 162.633.014 128.536 0C58.276 0 1.099 57.16 1.071 127.416m40.24 60.376l-2.523-4.005c-10.606-16.864-16.204-36.352-16.196-56.363C22.614 69.029 70.138 21.52 128.576 21.52c28.3.012 54.896 11.044 74.9 31.06c20.003 20.018 31.01 46.628 31.003 74.93c-.026 58.395-47.551 105.91-105.943 105.91h-.042c-19.013-.01-37.66-5.116-53.922-14.765l-3.87-2.295l-40.098 10.513z" />
+            <path fill="#fff"
+              d="M96.678 74.148c-2.386-5.303-4.897-5.41-7.166-5.503c-1.858-.08-3.982-.074-6.104-.074c-2.124 0-5.575.799-8.492 3.984c-2.92 3.188-11.148 10.892-11.148 26.561s11.413 30.813 13.004 32.94c1.593 2.123 22.033 35.307 54.405 48.073c26.904 10.609 32.379 8.499 38.218 7.967c5.84-.53 18.844-7.702 21.497-15.139c2.655-7.436 2.655-13.81 1.859-15.142c-.796-1.327-2.92-2.124-6.105-3.716s-18.844-9.298-21.763-10.361c-2.92-1.062-5.043-1.592-7.167 1.597c-2.124 3.184-8.223 10.356-10.082 12.48c-1.857 2.129-3.716 2.394-6.9.801c-3.187-1.598-13.444-4.957-25.613-15.806c-9.468-8.442-15.86-18.867-17.718-22.056c-1.858-3.184-.199-4.91 1.398-6.497c1.431-1.427 3.186-3.719 4.78-5.578c1.588-1.86 2.118-3.187 3.18-5.311c1.063-2.126.531-3.986-.264-5.579c-.798-1.593-6.987-17.343-9.819-23.64" />
+          </svg></a>
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256">
+            <g fill="none">
+              <rect width="256" height="256" fill="url(#skillIconsInstagram0)" rx="60" />
+              <rect width="256" height="256" fill="url(#skillIconsInstagram1)" rx="60" />
+              <path fill="#fff"
+                d="M128.009 28c-27.158 0-30.567.119-41.233.604c-10.646.488-17.913 2.173-24.271 4.646c-6.578 2.554-12.157 5.971-17.715 11.531c-5.563 5.559-8.98 11.138-11.542 17.713c-2.48 6.36-4.167 13.63-4.646 24.271c-.477 10.667-.602 14.077-.602 41.236s.12 30.557.604 41.223c.49 10.646 2.175 17.913 4.646 24.271c2.556 6.578 5.973 12.157 11.533 17.715c5.557 5.563 11.136 8.988 17.709 11.542c6.363 2.473 13.631 4.158 24.275 4.646c10.667.485 14.073.604 41.23.604c27.161 0 30.559-.119 41.225-.604c10.646-.488 17.921-2.173 24.284-4.646c6.575-2.554 12.146-5.979 17.702-11.542c5.563-5.558 8.979-11.137 11.542-17.712c2.458-6.361 4.146-13.63 4.646-24.272c.479-10.666.604-14.066.604-41.225s-.125-30.567-.604-41.234c-.5-10.646-2.188-17.912-4.646-24.27c-2.563-6.578-5.979-12.157-11.542-17.716c-5.562-5.562-11.125-8.979-17.708-11.53c-6.375-2.474-13.646-4.16-24.292-4.647c-10.667-.485-14.063-.604-41.23-.604zm-8.971 18.021c2.663-.004 5.634 0 8.971 0c26.701 0 29.865.096 40.409.575c9.75.446 15.042 2.075 18.567 3.444c4.667 1.812 7.994 3.979 11.492 7.48c3.5 3.5 5.666 6.833 7.483 11.5c1.369 3.52 3 8.812 3.444 18.562c.479 10.542.583 13.708.583 40.396s-.104 29.855-.583 40.396c-.446 9.75-2.075 15.042-3.444 18.563c-1.812 4.667-3.983 7.99-7.483 11.488c-3.5 3.5-6.823 5.666-11.492 7.479c-3.521 1.375-8.817 3-18.567 3.446c-10.542.479-13.708.583-40.409.583c-26.702 0-29.867-.104-40.408-.583c-9.75-.45-15.042-2.079-18.57-3.448c-4.666-1.813-8-3.979-11.5-7.479s-5.666-6.825-7.483-11.494c-1.369-3.521-3-8.813-3.444-18.563c-.479-10.542-.575-13.708-.575-40.413s.096-29.854.575-40.396c.446-9.75 2.075-15.042 3.444-18.567c1.813-4.667 3.983-8 7.484-11.5s6.833-5.667 11.5-7.483c3.525-1.375 8.819-3 18.569-3.448c9.225-.417 12.8-.542 31.437-.563zm62.351 16.604c-6.625 0-12 5.37-12 11.996c0 6.625 5.375 12 12 12s12-5.375 12-12s-5.375-12-12-12zm-53.38 14.021c-28.36 0-51.354 22.994-51.354 51.355s22.994 51.344 51.354 51.344c28.361 0 51.347-22.983 51.347-51.344c0-28.36-22.988-51.355-51.349-51.355zm0 18.021c18.409 0 33.334 14.923 33.334 33.334c0 18.409-14.925 33.334-33.334 33.334s-33.333-14.925-33.333-33.334c0-18.411 14.923-33.334 33.333-33.334" />
+              <defs>
+                <radialGradient id="skillIconsInstagram0" cx="0" cy="0" r="1"
+                  gradientTransform="matrix(0 -253.715 235.975 0 68 275.717)" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#fd5" />
+                  <stop offset=".1" stop-color="#fd5" />
+                  <stop offset=".5" stop-color="#ff543e" />
+                  <stop offset="1" stop-color="#c837ab" />
+                </radialGradient>
+                <radialGradient id="skillIconsInstagram1" cx="0" cy="0" r="1"
+                  gradientTransform="matrix(22.25952 111.2061 -458.39518 91.75449 -42.881 18.441)"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#3771c8" />
+                  <stop offset=".128" stop-color="#3771c8" />
+                  <stop offset="1" stop-color="#60f" stop-opacity="0" />
+                </radialGradient>
+              </defs>
+            </g>
+          </svg></a>
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M16.6 5.82s.51.5 0 0A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6c0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64c0 3.33 2.76 5.7 5.69 5.7c3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48" />
+          </svg></a>
+      </div>
+      <p class="text-gray-400">Visit us at Onitsha, Anambra State.</p>
+    </section>
+
+  <!-- JavaScript -->
+  <footer class="bg-zinc-900 py-6 text-center text-gray-400">
+    <p>&copy; 2025 Glow-Perfect. All rights reserved.</p>
+    <p>Designed by <a href="https://sannyscript.com.ng/" class="text-pink-500" target="_blank">Sannyscipt</a></p>
+    <!-- JavaScript -->
+    <!-- <script>
+      document.getElementById("whatsappForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const service = document.getElementById("service").value;
+        const date = document.getElementById("date").value;
+        const time = document.getElementById("time").value;
+        const contact = document.getElementById("contact").value;
+        const notes = document.getElementById("notes").value;
+
+        const message = `Hello, my name is ${name}. I would like to book a *${service}* on *${date}* at *${time}*.\n\nContact: ${contact}${notes ? `\n\nExtra Notes: ${notes}` : ''}`;
+
+        // Replace with your salon's WhatsApp number (in international format without + or leading 0)
+        const phoneNumber = "2349027375548";
+
+        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+        window.open(url, "_blank");
+      });
+    </script> -->
+    <script>
+      document.getElementById('whatsappForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        const service = document.getElementById('service').value;
+        const phone = document.getElementById('phone').value;
+        const message = document.getElementById('message').value;
+
+        const text = `Hello Glow Perfect,\n\nMy name is ${name}.\nI would like to book: ${service}.\nMy phone: ${phone}.\n\nMessage:\n${message}`;
+        const whatsappUrl = `https://wa.me/2349027375548?text=${encodeURIComponent(text)}`;
+        window.open(whatsappUrl, '_blank');
+      });
+    </script>    
+    </footer>
+</body>
+
+</html>
